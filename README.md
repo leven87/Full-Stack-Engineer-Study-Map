@@ -33,12 +33,14 @@ The purpose of this repository is to summarize the knowledge points that full-st
     * 上线. 
 
   * 服务发现. 我觉得还没有必要，对于小型网站，只有几台服务器，直接写在配置文件中即可。
-  * 负载均衡，服务网关。 不用考虑太复杂，甚至直接用nginx即可，也可加上Kong. 参见： https://www.jianshu.com/p/b65259021d2b 
+  * 负载均衡，服务网关. 不用考虑太复杂，甚至直接用nginx即可，也可加上Kong. 参见： https://www.jianshu.com/p/b65259021d2b 
   * 云服务. 可接入亚马逊云，阿里云等。
   * 服务监控. 这块不太熟，小公司可以先实现日志监控，发现请求异常，负载高等问题，利用elasticsearch. 也需检测服务器的负载，内存等情况，及时报警，可使用Sensu. 
-  * 服务容错。 这块暂不考虑自动化。这块主要还是通过报警，更改容器或服务器。
+  * 服务容错. 这块暂不考虑自动化。这块主要还是通过报警，更改容器或服务器。
   * 后台服务.
     * 消息系统.
-    * 缓存.
-    * 分布式数据访问.
-  *   
+    * 缓存. 
+    * 分布式数据访问. 分库分表，也可以有很多中间件。参看： https://blog.csdn.net/xcbeyond/article/details/54976983
+  * 服务安全.  OAuth 2.0, Jwt. 
+
+### NEW 
