@@ -43,4 +43,5 @@ The purpose of this repository is to summarize the knowledge points that full-st
     * 分布式数据访问. 分库分表，也可以有很多中间件。参看： https://blog.csdn.net/xcbeyond/article/details/54976983
   * 服务安全.  OAuth 2.0, Jwt. 
 
-### NEW 
+### 微信小程序
+  *  
