@@ -46,3 +46,15 @@ The purpose of this repository is to summarize the knowledge points that full-st
 ### 微信小程序
   *  目前有不少微信小程序的开发框架，可以将基于vue或者react的代码转化成wechat mini program. 详见： https://www.infoq.cn/article/87798qerszjekxhdu1ym
   *  Taro. 基于react, 社区发展良好。
+   
+### 前端框架
+#### React
+  * 工具链. 前端工具来进行复杂前端工程管理，提高易用性，可维护性和兼容性。   
+    * npm + package.json 包管理工具
+    * webpack（前端资源加载和打包工具），可以处理CSS,图片等
+    * babel(编译器)，能将较新标准的JS代码(ES^)转换成较旧标准的代码(ES5),从而在兼容更多的浏览器。
+  * 工具链实现方案. 参见： https://zh-hans.reactjs.org/docs/create-a-new-react-app.html   
+    * create-react-app. 创建前端流水线，内置 Babel 和 webpack。 你无需了解任何细节，适合学习和创建单页应用。
+    * 灵活的工具链. Neutrino, Nx等.
+    * 从头打造. 参见： https://zh-hans.reactjs.org/docs/optimizing-performance.html#use-the-production-build
+    * 无需工具链. 直接添加到<script>标签，开箱即用。 
