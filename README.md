@@ -44,4 +44,5 @@ The purpose of this repository is to summarize the knowledge points that full-st
   * 服务安全.  OAuth 2.0, Jwt. 
 
 ### 微信小程序
-  *  
+  *  目前有不少微信小程序的开发框架，可以将基于vue或者react的代码转化成wechat mini program. 详见： https://www.infoq.cn/article/87798qerszjekxhdu1ym
+  *  Taro. 基于react, 社区发展良好。
