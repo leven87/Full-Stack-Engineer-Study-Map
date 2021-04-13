@@ -10,7 +10,7 @@ The purpose of this repository is to summarize the knowledge points that full-st
     
   * 点击，滑动验证 本质是收集web客户端的各种信息，通过JS混淆，加密发送到服务端。https://www.zhihu.com/question/35538123/answer/221045391
   * 短信，邮箱验证  绑定手机，发送短信，短信接口实现
-  * 相关第三方解决方案。网易易盾，GEETEST等
+  * 相关第三方解决方案。网易易盾，GEETEST等（适合小公司）
 
 * Login by third-party
   * strategy. 可以使用登录和登录+绑定等多种策略，参见 http://www.woshipm.com/pd/437357.html
@@ -27,7 +27,7 @@ The purpose of this repository is to summarize the knowledge points that full-st
   * CI/CD. 
     * 代码编写. python, php, java, node.js, .net 等。在开发机或者本机。
     * 测试. phpunit, jest等测试框架或工具。
-    * 语法检查. ESLINT(javascript, node.js), PEP8(python)
+    * 语法检查. ESLINT(javascript, node.js), PEP8(python)等
     * 版本控制. GIT
     * 集成管理. Jenkins + Kubernetes + docker. Jenkins is a continuous integration server, support building and testing virtually any project. Kubernetes: Manage a cluster of Linux containers as a single system to accelerate Dev and simplify Ops. 具体实践参见： https://blog.csdn.net/liuchunming033/article/details/105455050 
     * 上线. 
@@ -58,3 +58,12 @@ The purpose of this repository is to summarize the knowledge points that full-st
     * 灵活的工具链. Neutrino, Nx等.
     * 从头打造. 参见： https://zh-hans.reactjs.org/docs/optimizing-performance.html#use-the-production-build
     * 无需工具链. 直接添加到<script>标签，开箱即用。 
+
+### python后端框架
+#### uWSGI + twisted 
+  * 这是我在搜狗工作的时候，QQ输入法的后端架构。 
+    * uWSGI是一个Web服务器，它实现了WSGI协议、uwsgi、http等协议。 参看：https://zhuanlan.zhihu.com/p/36448645  这里它往前端与nginx等代理服务器通信，获取用户请求。 往后端与twisted通信，处理用户请求。它本身又结合了mako网页模板，完成了现在前端框架（如：react,angular）等的工作。现在，人们通常使用react,vue等作为前端框架，同样，他们可以设置与Flask进行通讯。
+    * 如果要部署生产环境，需要结合nginx,docker等。 
+    * twisted
+#### Flask
+  * 如之前所写，现在都会用到Flask + 现代前端框架(vue, react等)
